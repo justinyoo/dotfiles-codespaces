@@ -12,4 +12,4 @@ cp .zshrc ~/
 cp .p10k.zsh ~/
 
 # source ~/.zshrc
-. ~/.zshrc
+# . ~/.zshrc

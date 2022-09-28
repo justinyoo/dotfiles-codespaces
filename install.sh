@@ -10,3 +10,5 @@ export CODESPACES_REPOSITORY=/workspaces/$RepositoryName
 mv ~/.zshrc ~/.zshrc.bak
 cp .zshrc ~/
 cp .p10k.zsh ~/
+
+source ~/.zshrc

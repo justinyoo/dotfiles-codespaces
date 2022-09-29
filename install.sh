@@ -6,10 +6,15 @@ echo "[$(date +"%Y-%m-%d %H:%M:%S")] Installing dotfiles ..."
 
 export CODESPACES_REPOSITORY=/workspaces/$RepositoryName
 
-## Copy oh-my-zsh files
-mv ~/.zshrc ~/.zshrc.bak
-cp .zshrc ~/
-cp .p10k.zsh ~/
+# Update the oh-my-zsh settings without your dotfiles
+cp .p10k-with-clock.zsh ~/
+cp .p10k-without-clock.zsh ~/
+cp switch-p10k-clock.sh ~/
 
-# source ~/.zshrc
-# . ~/.zshrc
+mv ~/.zshrc ~/.zshrc.bak
+
+echo "$(sed 's/ZSH_THEME="codespaces"/ZSH_THEME="powerlevel10k"/g' ~/.zshrc)" > ~/.zshrc
+echo "$(sed 's/plugins=(git)/plugins=(git zsh-completions zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc)" > ~/.zshrc
+echo "
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> $HOME/.zshrc

@@ -11,7 +11,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-git clone https://github.com/romkatv/powerlevel10k.git "~/.oh-my-zsh/custom/themes/powerlevel10k" --depth=1
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k --depth=1
 ln -s "~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" "~/.oh-my-zsh/custom/themes/powerlevel10k.zsh-theme"
 
 # Update the oh-my-zsh settings

@@ -28,3 +28,11 @@ echo "
 # To customize prompt, run 'p10k configure' or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 " >> ~/.zshrc
+
+# Update the oh-my-posh settings
+cp p10k-with-clock.omp.json > ~/
+cp p10k-without-clock.omp.json > ~/
+cp switch-p10k-clock.ps1 > ~/
+cp Microsoft.PowerShell_profile.ps1 > ~/.config/powershell/
+
+cp ~/p10k-with-clock.omp.json ~/p10k.omp.json

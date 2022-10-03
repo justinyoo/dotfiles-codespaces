@@ -1,4 +1,4 @@
-### This add the GitHub Codespaces capability to your local.setings.json
+### This add the GitHub Codespaces capability to your local.settings.json
 
 # Get the local.settings.sample.json file.
 $localSettingsSampleJson = Get-ChildItem -Path $env:CODESPACE_VSCODE_FOLDER -Filter local.settings.sample.json -Recurse

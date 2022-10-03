@@ -35,6 +35,7 @@ cp p10k-without-clock.omp.json ~/
 cp switch-p10k-clock.ps1 ~/
 
 mkdir ~/.config/powershell
-cp Microsoft.PowerShell_profile.ps1 ~/.config/powershell/
+cp Microsoft.PowerShell_profile.ps1 ~/.config/powershell/Microsoft.PowerShell_profile.ps1
+cp Microsoft.PowerShell_profile.ps1 ~/.config/powershell/Microsoft.VSCode_profile.ps1
 
 cp ~/p10k-with-clock.omp.json ~/p10k.omp.json

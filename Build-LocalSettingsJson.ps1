@@ -6,7 +6,7 @@ $localSettingsSampleJson = Get-ChildItem -Path $env:CODESPACE_VSCODE_FOLDER -Fil
 # Get the local.settings.json file. If not exists, create one.
 $localSettingsJson = Get-ChildItem -Path $localSettingsSampleJson.Directory.FullName -Filter local.settings.json
 if ($localSettingsJson -eq $null) {
-    Copy-Item -Path $localSettingsSampleJson.FullName -Destination "$($localSettingsSampleJson.Directory.Name)/local.settings.json"
+    Copy-Item -Path $localSettingsSampleJson.FullName -Destination "$($localSettingsSampleJson.Directory.FullName)/local.settings.json"
     $localSettingsJson = Get-ChildItem -Path $localSettingsSampleJson.Directory.FullName -Filter local.settings.json
 }
 
